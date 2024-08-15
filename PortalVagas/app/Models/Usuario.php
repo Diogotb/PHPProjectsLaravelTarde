@@ -19,11 +19,11 @@ class Usuario extends Authenticatable
     {
         return $this->hasMany(Inscricao::class);
     }
-    public function is_user()
+    public function isUsuario()
     {
         return $this->tipo === 'usuario';
     }
-    public function is_empresa()
+    public function isEmpresa()
     {
         return $this->tipo === 'empresa';
     }
