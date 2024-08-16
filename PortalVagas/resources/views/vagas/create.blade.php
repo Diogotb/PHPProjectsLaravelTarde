@@ -40,7 +40,7 @@
 
         <div class="form-group">
             <label for="empresa">Empresa:</label>
-            <input type="text" name="empresa" class="form-control" placeholder="Empresa">
+            <input type="text" name="empresa" class="form-control" placeholder="Empresa" value="{{Auth::user()->nome_empresa}}">
         </div>
 
         <button type="submit" class="btn btn-primary">Enviar</button>
